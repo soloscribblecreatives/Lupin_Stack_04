@@ -1,4 +1,4 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
@@ -12,154 +12,38 @@
 
 .s1_2 {
 	position: absolute;
-	left: 159px;
-	top: 410px;
-	width: 708px;
-	height: 292px;
-	animation: fadeIn 0.1s;
-	animation-delay: 1.5s;
-	animation-fill-mode: both;
+	width: 1024px;
+	height: 768px;
+	display: none;
 	z-index: 2;
-}
-
-.cls-1 {
-	fill:none;
-	stroke: #00a0e3;
-	stroke-miterlimit: 2.61;
-	stroke-width: 3px;
-	stroke-dasharray: 1600;
-	stroke-dashoffset: 0;
-	animation: dash 4s linear;
-	animation-delay: 1.5s;
-}
-
-@keyframes dash {
-	from {
-		stroke-dashoffset: 1600;
-		opacity: 1;
-	}
-			
-	to {		
-		stroke-dashoffset: 0;
-		opacity: 1;
-	}
 }
 
 .s1_3 {
 	position: absolute;
-	left: 400px;
-	top: 339px;
-	width: 222px;
-	height: 108px;
-	animation: bounceIn 0.5s;
-	animation-delay: 1s;
+	left: 936px;
+	top: 423px;
+	width: 49px;
+	height: 59px;
+	animation: flash 3s infinite;
+	animation-delay: 0.5s;
 	animation-fill-mode: both;
+	z-index: 3;
+}
+
+
+.s1_pop1 {
+	position: absolute;
+	left: 936px;
+	top: 423px;
+	width: 49px;
+	height: 59px;
 	z-index: 4;
 }
 
-.s1_4 {
+.s1_c1ose1 {
 	position: absolute;
-	left: 687px;
-	top: 395px;
-	width: 221px;
-	height: 109px;
-	animation: bounceIn 0.5s;
-	animation-delay: 2s;
-	animation-fill-mode: both;
-	z-index: 4;
-}
-
-.s1_5 {
-	position: absolute;
-	left: 657px;
-	top: 543px;
-	width: 222px;
-	height: 109px;
-	animation: bounceIn 0.5s;
-	animation-delay: 2.7s;
-	animation-fill-mode: both;
-   z-index: 4;
-}
-
-.s1_6 {
-	position: absolute;
-	left: 400px;
-	top: 610px;
-	width: 222px;
-	height: 109px;
-	animation: bounceIn 0.5s;
-	animation-delay: 3.5s;
-	animation-fill-mode: both;
-	z-index: 4;
-}
-
-.s1_7 {
-	position: absolute;
-	left: 146px;
-	top: 543px;
-	width: 222px;
-	height: 109px;
-	animation: bounceIn 0.5s;
-	animation-delay: 4.2s;
-	animation-fill-mode: both;
-	z-index: 4;
-}
-
-.s1_8 {
-	position: absolute;
-	left: 117px;
-	top: 395px;
-	width: 221px;
-	height: 109px;
-	animation: bounceIn 0.5s;
-	animation-delay: 4.8s;
-	animation-fill-mode: both;
-	z-index: 4;
-}
-
-.s1_9 {
-	position: absolute;
-	left: 440px;
-	top: 465px;
-	width: 143px;
-	height: 133px;
-	animation: stampIn 0.2s;
-	animation-delay: 6s;
-	animation-fill-mode: both;
-	z-index: 4;
-}
-
-@-webkit-keyframes stampIn {
-	0% {
-		opacity: 0;
-	}
-	10% {
-		transform-origin: 50% 50%;
-		transform: rotate(-40deg) scale(3);
-		opacity: 0.5;
-	}
-	100% {
-		transform: rotate(0deg) scale(1);
-		opacity: 1;
-	}
-}
-
-@keyframes stampIn {
-	0% {
-		opacity: 0;
-	}
-	10% {
-		transform-origin: 50% 50%;
-		transform: rotate(-30deg) scale(2);
-		opacity: 0.5;
-	}
-	100% {
-		transform: rotate(0deg) scale(1);
-		opacity: 1;
-	}
-}
-
-.stampIn {
-	-webkit-animation-name: stampIn;
-	animation-name: stampIn;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 6;
 }
