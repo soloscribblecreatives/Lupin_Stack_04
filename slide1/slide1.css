@@ -68,10 +68,7 @@
   top: 239px;
   width: 106px;
   height: 173px;
-  transition-delay: 5.5s;
-  transition-duration: 1.5s;
-  transform: translate(232px, 156px);
-  animation: fadeOut 2s;
+  animation: translate1 2s;
   animation-delay: 5.5s;
   animation-fill-mode: both;
   z-index: 3;
@@ -80,9 +77,38 @@
 .s1_4_wrap_all {
   position: absolute;
   animation: fadeOut 1s;
-  animation-delay: 6s;
+  animation-delay: 6.5s;
   animation-fill-mode: both;
   z-index: 3;
+}
+
+@-webkit-keyframes translate1 {
+  from {
+    left: 188px;
+	top: 239px;
+  }
+
+  to {
+    left: 420px;
+	top: 395px;
+  }
+}
+
+@keyframes translate1 {
+  from {
+    left: 188px;
+	top: 239px;
+  }
+
+  to {
+    left: 420px;
+	top: 395px;
+  }
+}
+
+.translate1 {
+  -webkit-animation-name: translate1;
+  animation-name: translate1;
 }
 
 .s1_5 {
@@ -115,13 +141,39 @@
   top: 239px;
   width: 170px;
   height: 171px;
-  transition-delay: 5.5s;
-  transition-duration: 1.5s;
-  transform: translate(0px, 156px);
-  animation: fadeOut 2s;
+  animation: translate2 2s;
   animation-delay: 5.5s;
   animation-fill-mode: both;
   z-index: 3;
+}
+
+@-webkit-keyframes translate2 {
+  from {
+    left: 428px;
+	top: 239px;
+  }
+
+  to {
+    left: 428px;
+	top: 395px;
+  }
+}
+
+@keyframes translate2 {
+  from {
+    left: 428px;
+	top: 239px;
+  }
+
+  to {
+    left: 428px;
+	top: 395px;
+  }
+}
+
+.translate2 {
+  -webkit-animation-name: translate2;
+  animation-name: translate2;
 }
 
 .s1_7 {
@@ -155,13 +207,39 @@
   top: 239px;
   width: 104px;
   height: 172px;
-  transition-delay: 5.5s;
-  transition-duration: 1.5s;
-  transform: translate(-232px, 156px);
-  animation: fadeOut 2s;
+  animation: translate3 2s;
   animation-delay: 5.5s;
   animation-fill-mode: both;
   z-index: 3;
+}
+
+@-webkit-keyframes translate3 {
+  from {
+    left: 732px;
+    top: 239px;
+  }
+
+  to {
+    left: 500px;
+	top: 395px;
+  }
+}
+
+@keyframes translate3 {
+  from {
+    left: 732px;
+    top: 239px;
+  }
+
+  to {
+    left: 500px;
+	top: 395px;
+  }
+}
+
+.translate3 {
+  -webkit-animation-name: translate3;
+  animation-name: translate3;
 }
 
 .s1_8_1 {
@@ -301,7 +379,7 @@
   height: 0px;
   overflow: hidden;
   animation: growHeightFull 1s;
-  animation-delay: 13.5s;
+  animation-delay: 12.5s;
   animation-fill-mode: both;
   z-index: 12;
 }
@@ -322,7 +400,7 @@
   width: 423px;
   height: 328px;
   animation: fadeIn 1s;
-  animation-delay: 14.5s;
+  animation-delay: 13.5s;
   animation-fill-mode: both;
   z-index: 14;
 }
@@ -334,7 +412,7 @@
   width: 169px;
   height: 70px;
   animation: flashIn 1s;
-  animation-delay: 15s;
+  animation-delay: 14s;
   animation-fill-mode: both;
   z-index: 14;
 }
@@ -346,7 +424,7 @@
   width: 169px;
   height: 70px;
   animation: flashIn 1s;
-  animation-delay: 16s;
+  animation-delay: 15s;
   animation-fill-mode: both;
   z-index: 14;
 }
@@ -358,7 +436,7 @@
   width: 170px;
   height: 70px;
   animation: flashIn 1s;
-  animation-delay: 17s;
+  animation-delay: 16s;
   animation-fill-mode: both;
   z-index: 14;
 }
@@ -370,7 +448,7 @@
   width: 225px;
   height: 69px;
   animation: flashIn 1s;
-  animation-delay: 18s;
+  animation-delay: 17s;
   animation-fill-mode: both;
   z-index: 14;
 }
@@ -522,6 +600,31 @@
 .flashOut {
   -webkit-animation-name: flashOut;
   animation-name: flashOut;
+}
+
+@-webkit-keyframes flashIn {
+  20%, 60%, 100% {
+    opacity: 1;
+  }
+
+  0%, 40%, 80% {
+    opacity: 0;
+  }
+}
+
+@keyframes flashIn {
+  20%, 60%, 100% {
+    opacity: 1;
+  }
+
+  0%, 40%, 80% {
+    opacity: 0;
+  }
+}
+
+.flashIn {
+  -webkit-animation-name: flashIn;
+  animation-name: flashIn;
 }
 
 @-webkit-keyframes flashIn {
