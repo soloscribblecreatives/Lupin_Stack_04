@@ -16,28 +16,16 @@
 
 <body>
 <div id="wrapper" rel="1">
+  <div class="menu"> <img src="menu.png" width="37" alt=""> </div>
   <div class="slide_arrow">
-    <div class="left_arrow" ><img src="left_arrow.png" alt="previous icon" width="60" height="60" ></div>
-    <div class="right_arrow" ><img src="right_arrow.png" alt="next icon" width="60" height="60"></div>
+    <div class="left_arrow" ><img src="left_arrow.png" alt="previous icon" width="23" height="23" ></div>
+    <div class="right_arrow" ><img src="right_arrow.png" alt="next icon" width="23" height="23"></div>
   </div>
   <div id="main_content"></div>
   <div class="reference active">
     <div class="box">
       <div class="slide_jumper">
 		  <div class="slides"><img src="thumbs/01.png" alt=""></div>
-          <div class="slides"><img src="thumbs/02.png" alt=""></div>
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
-          <div class="slides"><img src="thumbs/03.png" alt=""></div> 
       </div>
     </div>
     <div class="box_btn"></div>
@@ -48,16 +36,17 @@
 <script src="global.js" type="text/javascript" language="javascript"></script> 
 <script>
 var startTime = Date.now();
+
 //step 1:
 var temp = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_1");
 	
-	if(temp == null){			
-			localStorage.setItem(currentContentId+"_"+contentName+"_slideNo_1" ,startTime);
-			localStorage.setItem(currentContentId+"_"+contentName+"_totalTime_slideNo_1",0);
-			//to capture start time of 1st slide in db format
-			var startTime1InDBFormat = currentTimeInDatabaseFormat();
-			//alert(startTime1InDBFormat);
-			localStorage.setItem(currentContentId+"_"+contentName+"_StartTime_1" ,startTime1InDBFormat);	
+	if(temp == null){
+		localStorage.setItem(currentContentId+"_"+contentName+"_slideNo_1" ,startTime);
+		localStorage.setItem(currentContentId+"_"+contentName+"_totalTime_slideNo_1",0);
+		//to capture start time of 1st slide in db format
+		var startTime1InDBFormat = currentTimeInDatabaseFormat();
+		//alert(startTime1InDBFormat);
+		localStorage.setItem(currentContentId+"_"+contentName+"_StartTime_1" ,startTime1InDBFormat);
 	}
 //step 1 ends here..
 
@@ -74,49 +63,10 @@ if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' && local
 	var custcomslideid = parseInt(localStorage.getItem("currentcontentcustomslideId")) ;
 	
 	switch(custcomslideid){
-	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="1Cover/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="2CorciumD3/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-    case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="3Yamini/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="4Fosrium/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="5Estroease/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="6LupigestSR/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="7Lupigest/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 8:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="8RichovaSR/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="9Leuprolide/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 10:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="10Revofer/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 11:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="11Faa20/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 12:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="12FHeal/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 13:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="13LupiHCG/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-	case 14:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="14Maschio/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;	
-}
+		case 1:
+		content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""/></div><div class="s1_2_wrap_all"><div class="s1_2_wrap"><div class="s1_2"><img src="slide1/s1_2.png"/></div></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_5"><img src="slide1/s1_5.png"/></div><div class="s1_7"><img src="slide1/s1_7.png"/></div></div><div class="s1_4_wrap_all"><div class="s1_4_wrap"><div class="s1_4"><img src="slide1/s1_4.png"/></div></div><div class="s1_6_wrap"><div class="s1_6"><img src="slide1/s1_6.png"/></div></div><div class="s1_8_wrap"><div class="s1_8"><img src="slide1/s1_8.png"/></div></div><div class="s1_8_1"><img src="slide1/s1_8_1.png"/></div></div><div class="s1_9"><img src="slide1/s1_9.png"/></div><div class="s1_10"><img src="slide1/s1_10.png"/></div><div class="s1_11_wrap"><div class="s1_11"><img src="slide1/s1_11.png"/></div></div><div class="s1_12_wrap"><div class="s1_12"><img src="slide1/s1_12.png"/></div></div><div class="s1_13"><img src="slide1/s1_13.png"/></div><div class="s1_14"><img src="slide1/s1_14.png"/></div><div class="s1_15_wrap"><div class="s1_15"><img src="slide1/s1_15.png"/></div></div><div class="s1_16"><img src="slide1/s1_16.png"/></div><div class="s1_17_wrap"><div class="s1_17"><img src="slide1/s1_17.png"/></div></div><div class="s1_18"><img src="slide1/s1_18.png"/></div><div class="s1_19"><img src="slide1/s1_19.png"/></div><div class="s1_20"><img src="slide1/s1_20.png"/></div><div class="s1_21"><img src="slide1/s1_21.png"/></div><div class="s1_22"><img src="slide1/s1_22.png"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
+		break;
+	}
 
 	$("#main_content").html(content);
 	  localStorage.setItem("gotoNextPrevBrand" ,1);//if one than next if 2 than prev
@@ -125,8 +75,10 @@ if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' && local
 	 
 }else{
 
-$("#main_content").html('<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="1Cover/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>');
+$("#main_content").html('<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""/></div><div class="s1_2_wrap_all"><div class="s1_2_wrap"><div class="s1_2"><img src="slide1/s1_2.png"/></div></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_5"><img src="slide1/s1_5.png"/></div><div class="s1_7"><img src="slide1/s1_7.png"/></div></div><div class="s1_4_wrap_all"><div class="s1_4_wrap"><div class="s1_4"><img src="slide1/s1_4.png"/></div></div><div class="s1_6_wrap"><div class="s1_6"><img src="slide1/s1_6.png"/></div></div><div class="s1_8_wrap"><div class="s1_8"><img src="slide1/s1_8.png"/></div></div><div class="s1_8_1"><img src="slide1/s1_8_1.png"/></div></div><div class="s1_9"><img src="slide1/s1_9.png"/></div><div class="s1_10"><img src="slide1/s1_10.png"/></div><div class="s1_11_wrap"><div class="s1_11"><img src="slide1/s1_11.png"/></div></div><div class="s1_12_wrap"><div class="s1_12"><img src="slide1/s1_12.png"/></div></div><div class="s1_13"><img src="slide1/s1_13.png"/></div><div class="s1_14"><img src="slide1/s1_14.png"/></div><div class="s1_15_wrap"><div class="s1_15"><img src="slide1/s1_15.png"/></div></div><div class="s1_16"><img src="slide1/s1_16.png"/></div><div class="s1_17_wrap"><div class="s1_17"><img src="slide1/s1_17.png"/></div></div><div class="s1_18"><img src="slide1/s1_18.png"/></div><div class="s1_19"><img src="slide1/s1_19.png"/></div><div class="s1_20"><img src="slide1/s1_20.png"/></div><div class="s1_21"><img src="slide1/s1_21.png"/></div><div class="s1_22"><img src="slide1/s1_22.png"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>');
+
 }
+
 });
 </script> 
 
