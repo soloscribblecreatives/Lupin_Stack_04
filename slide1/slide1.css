@@ -453,6 +453,73 @@
   z-index: 14;
 }
 
+.s1_23,
+.s1_24,
+.s1_25,
+.s1_26 {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  display: none;
+  z-index: 25;
+}
+
+.s1_pop1 {
+	position: absolute;
+	left: 115px;
+	top: 440px;
+	width: 190px;
+	height: 100px;
+	animation: showBlock 0.1s;
+    animation-delay: 15s;
+    animation-fill-mode: both;
+	z-index: -100;
+}
+
+.s1_pop2 {
+	position: absolute;
+	left: 325px;
+	top: 440px;
+	width: 190px;
+	height: 100px;
+	animation: showBlock 0.1s;
+    animation-delay: 16s;
+    animation-fill-mode: both;
+	z-index: -100;
+}
+
+.s1_pop3 {
+	position: absolute;
+	left: 115px;
+	top: 550px;
+	width: 190px;
+	height: 100px;
+	animation: showBlock 0.1s;
+    animation-delay: 17s;
+    animation-fill-mode: both;
+	z-index: -100;
+}
+
+.s1_pop4 {
+	position: absolute;
+	left: 325px;
+	top: 550px;
+	width: 250px;
+	height: 100px;
+	animation: showBlock 0.1s;
+    animation-delay: 18s;
+    animation-fill-mode: both;
+	z-index: -100;
+}
+
+.s1_close1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 30;
+}
+
 
 @-webkit-keyframes growHeightFull {
   0% {
@@ -650,4 +717,30 @@
 .flashIn {
   -webkit-animation-name: flashIn;
   animation-name: flashIn;
+}
+
+
+@-webkit-keyframes showBlock {
+  from {
+    z-index: -100;
+  }
+
+  to {
+    z-index: 20;
+  }
+}
+
+@keyframes showBlock {
+  from {
+    z-index: -100;
+  }
+
+  to {
+    z-index: 20;
+  }
+}
+
+.showBlock {
+  -webkit-animation-name: showBlock;
+  animation-name: showBlock;
 }

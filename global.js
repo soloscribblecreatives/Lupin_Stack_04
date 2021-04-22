@@ -347,7 +347,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""/></div><div class="s1_2_wrap_all"><div class="s1_2_wrap"><div class="s1_2"><img src="slide1/s1_2.png"/></div></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_5"><img src="slide1/s1_5.png"/></div><div class="s1_7"><img src="slide1/s1_7.png"/></div></div><div class="s1_4_wrap_all"><div class="s1_4_wrap"><div class="s1_4"><img src="slide1/s1_4.png"/></div></div><div class="s1_6_wrap"><div class="s1_6"><img src="slide1/s1_6.png"/></div></div><div class="s1_8_wrap"><div class="s1_8"><img src="slide1/s1_8.png"/></div></div><div class="s1_8_1"><img src="slide1/s1_8_1.png"/></div></div><div class="s1_9"><img src="slide1/s1_9.png"/></div><div class="s1_10"><img src="slide1/s1_10.png"/></div><div class="s1_11_wrap"><div class="s1_11"><img src="slide1/s1_11.png"/></div></div><div class="s1_12_wrap"><div class="s1_12"><img src="slide1/s1_12.png"/></div></div><div class="s1_13"><img src="slide1/s1_13.png"/></div><div class="s1_14"><img src="slide1/s1_14.png"/></div><div class="s1_15_wrap"><div class="s1_15"><img src="slide1/s1_15.png"/></div></div><div class="s1_16"><img src="slide1/s1_16.png"/></div><div class="s1_17_wrap"><div class="s1_17"><img src="slide1/s1_17.png"/></div></div><div class="s1_18"><img src="slide1/s1_18.png"/></div><div class="s1_19"><img src="slide1/s1_19.png"/></div><div class="s1_20"><img src="slide1/s1_20.png"/></div><div class="s1_21"><img src="slide1/s1_21.png"/></div><div class="s1_22"><img src="slide1/s1_22.png"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""/></div><div class="s1_2_wrap_all"><div class="s1_2_wrap"><div class="s1_2"><img src="slide1/s1_2.png"/></div></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_5"><img src="slide1/s1_5.png"/></div><div class="s1_7"><img src="slide1/s1_7.png"/></div></div><div class="s1_4_wrap_all"><div class="s1_4_wrap"><div class="s1_4"><img src="slide1/s1_4.png"/></div></div><div class="s1_6_wrap"><div class="s1_6"><img src="slide1/s1_6.png"/></div></div><div class="s1_8_wrap"><div class="s1_8"><img src="slide1/s1_8.png"/></div></div><div class="s1_8_1"><img src="slide1/s1_8_1.png"/></div></div><div class="s1_9"><img src="slide1/s1_9.png"/></div><div class="s1_10"><img src="slide1/s1_10.png"/></div><div class="s1_11_wrap"><div class="s1_11"><img src="slide1/s1_11.png"/></div></div><div class="s1_12_wrap"><div class="s1_12"><img src="slide1/s1_12.png"/></div></div><div class="s1_13"><img src="slide1/s1_13.png"/></div><div class="s1_14"><img src="slide1/s1_14.png"/></div><div class="s1_15_wrap"><div class="s1_15"><img src="slide1/s1_15.png"/></div></div><div class="s1_16"><img src="slide1/s1_16.png"/></div><div class="s1_17_wrap"><div class="s1_17"><img src="slide1/s1_17.png"/></div></div><div class="s1_18"><img src="slide1/s1_18.png"/></div><div class="s1_19"><img src="slide1/s1_19.png"/></div><div class="s1_20"><img src="slide1/s1_20.png"/></div><div class="s1_21"><img src="slide1/s1_21.png"/></div><div class="s1_22"><img src="slide1/s1_22.png"/></div><div class="s1_23"><img src="slide1/s1_23.jpg" width="1024" height="768" alt=""/></div><div class="s1_24"><img src="slide1/s1_24.jpg" width="1024" height="768" alt=""/></div><div class="s1_25"><img src="slide1/s1_25.jpg" width="1024" height="768" alt=""/></div><div class="s1_26"><img src="slide1/s1_26.jpg" width="1024" height="768" alt=""/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_pop2" onclick="s1_pop2()"></div><div class="s1_pop3" onclick="s1_pop3()"></div><div class="s1_pop4" onclick="s1_pop4()"></div><div class="s1_close1" onclick="s1_close1()"></div>';
 	break;
 
 }
@@ -489,3 +489,47 @@ $(document).ready(function(){
 		$('.touchbtn').css("display","block");
 	})
 })
+
+
+/*--------------------- animation javascript -----------------------*/
+
+function s1_pop1() {
+	$('.s1_23').css("display","block");
+	$('.s1_pop1').css("display","none");
+	$('.s1_close1').css("display","block");
+}
+
+function s1_pop2() {
+	$('.s1_24').css("display","block");
+	$('.s1_pop2').css("display","none");
+	$('.s1_close1').css("display","block");
+}
+
+function s1_pop3() {
+	$('.s1_25').css("display","block");
+	$('.s1_pop3').css("display","none");
+	$('.s1_close1').css("display","block");
+}
+
+function s1_pop4() {
+	$('.s1_26').css("display","block");
+	$('.s1_pop4').css("display","none");
+	$('.s1_close1').css("display","block");
+}
+
+function s1_close1() {
+	$('.s1_23').css("display","none");
+	$('.s1_pop1').css("display","block");
+	$('.s1_close1').css("display","none");
+	$('.s1_24').css("display","none");
+	$('.s1_pop2').css("display","block");
+	$('.s1_close1').css("display","none");
+	$('.s1_25').css("display","none");
+	$('.s1_pop3').css("display","block");
+	$('.s1_close1').css("display","none");
+	$('.s1_26').css("display","none");
+	$('.s1_pop4').css("display","block");
+	$('.s1_close1').css("display","none");
+	$('.s1_pop1, .s1_pop2, .s1_pop3, .s1_pop4').css("z-index","20");
+	$('.s1_pop1, .s1_pop2, .s1_pop3, .s1_pop4').css("animation","none");
+}
