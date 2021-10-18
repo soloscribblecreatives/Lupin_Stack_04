@@ -8,3 +8,10 @@
 	width: 1024px;
 	height: 768px;
 }
+
+.logo {
+	position: absolute;
+	left: 373px;
+	top: 53px;
+	z-index: 1;
+}
