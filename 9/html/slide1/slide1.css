@@ -1,20 +1,10 @@
 * {
-  margin: 0px;
-  padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 .background {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  z-index: 1;
-}
-
-.logo {
-  position: absolute;
-  left: 206px;
-  top: 40px;
-  width: 632px;
-  height: 300px;
-  z-index: 4;
+	position: absolute;
+	width: 1024px;
+	height: 768px;
 }

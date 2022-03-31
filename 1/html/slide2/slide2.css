@@ -7,14 +7,4 @@
 	position: absolute;
 	width: 1024px;
 	height: 768px;
-	z-index: 1;
-}
-
-.logo {
-	position: absolute;
-  left: 116px;
-  top: 90px;
-  width: 753px;
-  height: 133px;
-	z-index: 1;
 }
