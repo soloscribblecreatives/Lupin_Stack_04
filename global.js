@@ -1,6 +1,6 @@
 
 var arrSurveyQuestions = {
-   1: "Which political leader voice it is.?"
+   1: "Which cricketer voice it is?"
 };
 /*Code by android developers start here*/
 var startLoc = null;
@@ -258,7 +258,7 @@ if(direction == 'b') {
 	}
 	
 		else{
-			if(page_id <= 3){
+		if(page_id <= 3){
 		page_id = page_id + 1;
 		//alert(page_id);
 		if(page_id == 4){
@@ -322,7 +322,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""></div><div class="s1_2"><img src="slide1/s1_2.png" width="1024" height="768" alt=""></div><div class="playAudio" onclick="playMyAudio()"></div><div class="s1_3"><img src="slide1/s1_3.png"></div><div class="s1_4"><img src="slide1/s1_4.png"></div><div class="s1_5"><img src="slide1/s1_5.png"></div><div class="s1_6"><img src="slide1/s1_6.png"></div><div class="s1_7"><img src="slide1/s1_7.png"></div><div class="s1_8"><img src="slide1/s1_7.png"></div><div class="s1_9"><img src="slide1/s1_7.png"></div><audio id="myAudio"><source src="slide1/Nehru.mp3" type="audio/mpeg"></audio><audio id="correct"><source src="slide1/Correct.mp3" type="audio/mpeg"></audio><audio id="wrong"><source src="slide1/Wrong.mp3" type="audio/mpeg"></audio>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""></div><div class="s1_2"><img src="slide1/s1_2.png" width="1024" height="768" alt=""></div><div class="playAudio" onclick="playMyAudio()"></div><div class="s1_3"><img src="slide1/s1_3.png"></div><div class="s1_4"><img src="slide1/s1_4.png"></div><div class="s1_5"><img src="slide1/s1_5.png"></div><div class="s1_6"><img src="slide1/s1_7.png"></div><div class="s1_7"><img src="slide1/s1_6.png"></div><div class="s1_8"><img src="slide1/s1_7.png"></div><div class="s1_9"><img src="slide1/s1_7.png"></div><audio id="myAudio"><source src="slide1/Sachin.mp3" type="audio/mpeg"></audio><audio id="correct"><source src="slide1/Correct.mp3" type="audio/mpeg"></audio><audio id="wrong"><source src="slide1/Wrong.mp3" type="audio/mpeg"></audio>';
 	break;
 	case 2:
 	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
@@ -411,10 +411,10 @@ function open_page2(url,page_id,count){
 		if(currentslide == 1){
 		document.getElementById("click_through").innerHTML='<div class="slide02_inline_wraper" id="buttons"><div class="slide01_home_btn_mask" onclick="checkBtns(3)"></div>\
 			<div id="slide01_question01_choices01" class="control-group">\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Jawaharlal Nehru"/><div class="control_indicator"id="radio01" onclick="option1()"></div></label>\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="Mahatma Gandhi"/><div class="control_indicator"id="radio02" onclick="option2()"></div></label>\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_03" name="checkB01" value="Sardar Vallabhbhai Patel"/><div class="control_indicator"id="radio03" onclick="option3()"></div></label>\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_04" name="checkB01" value="Netaji Subhas Chandra Bose"/><div class="control_indicator"id="radio04" onclick="option4()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="M. S. Dhoni"/><div class="control_indicator"id="radio01" onclick="option1()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="Sachin Tendulkar"/><div class="control_indicator"id="radio02" onclick="option2()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_03" name="checkB01" value="Rahul Dravid"/><div class="control_indicator"id="radio03" onclick="option3()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_04" name="checkB01" value="Sourav Ganguly"/><div class="control_indicator"id="radio04" onclick="option4()"></div></label>\
 			</div>\
 				<div class="slide01_next  animated infinite pulse" onclick="checkBtns(3),open_page("4")"></div><div class="submit_button" onclick="savedata(1,1,1);endTime1(1);hidesubmitonclick();"></div></div></div>';  
 		$('#slide01_question01_choices01').delay(10).fadeIn();
@@ -563,11 +563,24 @@ function playMyAudio() {
 
 function option1() {
 	document.getElementById("myAudio").pause();
+	document.getElementById("wrong").play();
+	$('.s1_6').css("display","block");
+	$('.s1_7').css("display","none");
+	$('.s1_8').css("display","none");
+	$('.s1_9').css("display","none");
+	$('.submit_button').css("display","none");
+	
+	$('.playAudio').css("display","none");
+	$('.s1_3').addClass('s1_3_stop');
+}
+
+function option2() {
+	document.getElementById("myAudio").pause();
 	document.getElementById("correct").play();
 	$('.s1_4').css("display","block");
 	$('.s1_5').css("display","block");
-	$('.s1_6').css("display","block");
-	$('.s1_7').css("display","none");
+	$('.s1_6').css("display","none");
+	$('.s1_7').css("display","block");
 	$('.s1_8').css("display","none");
 	$('.s1_9').css("display","none");
 	$(".submit_button,.slide01_next").fadeIn();	
@@ -578,19 +591,6 @@ function option1() {
 	$('#radio04').css("display","none");
 	
     $('.playAudio').css("display","none");
-	$('.s1_3').addClass('s1_3_stop');
-}
-
-function option2() {
-	document.getElementById("myAudio").pause();
-	document.getElementById("wrong").play();
-	$('.s1_6').css("display","none");
-	$('.s1_7').css("display","block");
-	$('.s1_8').css("display","none");
-	$('.s1_9').css("display","none");
-	$('.submit_button').css("display","none");
-	
-	$('.playAudio').css("display","none");
 	$('.s1_3').addClass('s1_3_stop');
 }
 
