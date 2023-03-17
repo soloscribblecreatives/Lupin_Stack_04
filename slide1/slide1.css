@@ -7,30 +7,32 @@
 	position: absolute;
 	width: 1024px;
 	height: 768px;
-	z-index: 1;
+	z-index:1;
 }
 
-.pop_up {
+.logo {
+  position: absolute;
+  left: 34px;
+  top: 601px;
+  width: 247px;
+  height: 125px;
+  animation: pulse 1s infinite;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.button {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 999;
+}
+
+.video2 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
 	display: none;
-	z-index: 8;
-}
-
-.pop1 {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-	width: 150px;
-	height: 150px;
-	z-index: 10;
-}
-
-.c1ose1 {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	display: none;
-	z-index: 12;
+	z-index:5;
 }
