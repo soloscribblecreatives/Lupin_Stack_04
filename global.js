@@ -388,7 +388,7 @@ switch(pg_id){
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background1"><img src="slide2/s2_1.png" width="1024" height="768" alt=""></div><div class="reveal" onclick="reveaLogo()"></div><div class="background2"><img src="slide2/s2_2.png" width="1024" height="768" alt=""></div><div class="pin1"><img src="slide2/s2_3.png"></div><div class="pin2"><img src="slide2/s2_4.png"></div><div class="point1"><img src="slide2/s2_5.png"></div><div class="point2"><img src="slide2/s2_6.png"></div><div class="point3"><img src="slide2/s2_7.png"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background1"><img src="slide2/s2_1.png" width="1024" height="768" alt=""></div><div class="reveal" onclick="reveaLogo()"></div><div class="pin1pulse"><img src="slide2/s2_3.png"></div><div class="background2"><img src="slide2/s2_2.png" width="1024" height="768" alt=""></div><div class="pin1"><img src="slide2/s2_3.png"></div><div class="pin2"><img src="slide2/s2_4.png"></div><div class="point1"><img src="slide2/s2_5.png"></div><div class="point2"><img src="slide2/s2_6.png"></div><div class="point3"><img src="slide2/s2_7.png"></div>';
 	break;
     case 3:
 	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
@@ -541,6 +541,7 @@ $(document).ready(function(){
 
 function reveaLogo() {
 	$('.background2').css("display","block");
+	$('.pin1pulse').css("display","none");
 	$('.pin1').css("display","block");
 	$('.pin2').css("display","block");
 	$('.point1').css("display","block");

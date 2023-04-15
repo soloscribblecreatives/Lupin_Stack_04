@@ -10,13 +10,25 @@
 	z-index: 1;
 }
 
+.pin1pulse {
+  position: absolute;
+  left: 474px;
+  top: 205px;
+  width: 490px;
+  height: 100px;
+  animation: pulse 1s infinite;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
 .reveal {
 	position: absolute;
-    left: 206px;
-    top: 119px;
-    width: 245px;
-    height: 565px;
-	z-index: 1;
+  left: 440px;
+  top: 182px;
+  width: 558px;
+  height: 161px;
+	z-index: 15;
 }
 
 .background2 {
@@ -24,7 +36,7 @@
 	width: 1024px;
 	height: 768px;
 	display: none;
-	z-index: 2;
+	z-index: 5;
 }
 
 .pin1 {
@@ -37,7 +49,7 @@
   animation-delay: 0s;
   animation-fill-mode: both;
   display: none;
-  z-index: 2;
+  z-index: 7;
 }
 
 .pin2 {
@@ -50,7 +62,7 @@
   animation-delay: 0.6s;
   animation-fill-mode: both;
   display: none;
-  z-index: 2;
+  z-index: 10;
 }
 
 .point1 {
@@ -63,7 +75,7 @@
   animation-delay: 1.6s;
   animation-fill-mode: both;
   display: none;
-  z-index: 2;
+  z-index: 5;
 }
 
 .point2 {
@@ -76,7 +88,7 @@
   animation-delay: 1.8s;
   animation-fill-mode: both;
   display: none;
-  z-index: 2;
+  z-index: 5;
 }
 
 .point3 {
@@ -89,5 +101,5 @@
   animation-delay: 2s;
   animation-fill-mode: both;
   display: none;
-  z-index: 2;
+  z-index: 5;
 }
