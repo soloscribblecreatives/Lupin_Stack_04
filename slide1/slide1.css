@@ -1,11 +1,139 @@
 * {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.background {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-        z-index: 1;
+.s1_1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1024px;
+  height: 768px;
+  z-index: 1;
+}
+
+.option1 {
+  position: absolute;
+  left: 158px;
+  top: 146px;
+  width: 708px;
+  height: 445px;
+  animation: none 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.s1_2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1024px;
+  height: 768px;
+  animation: none 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 2;
+}
+
+.s1_3 {
+  position: absolute;
+  left: 356px;
+  top: 670px;
+  width: 311px;
+  height: 56px;
+  animation: pulse 1s infinite;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 4;
+}
+
+.option2 {
+  position: absolute;
+  left: 275px;
+  top: 635px;
+  width: 475px;
+  height: 135px;
+  animation: none 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 5;
+}
+
+.s1_4 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1024px;
+  height: 768px;
+  animation: none 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 6;
+}
+
+.s1_5 {
+  position: absolute;
+  left: 187px;
+  top: 156px;
+  width: 651px;
+  height: 176px;
+  animation: slideInUp 1s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 8;
+}
+
+.s1_6 {
+  position: absolute;
+  left: 124px;
+  top: 412px;
+  width: 807px;
+  height: 307px;
+  animation: zoomInDown 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 8;
+}
+
+.s1_7 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 513px;
+  height: 770px;
+  animation: slideOutLeft 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 12;
+}
+
+.s1_8 {
+  position: absolute;
+  left: 510px;
+  top: 0px;
+  width: 514px;
+  height: 770px;
+  animation: slideOutRight 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+  display: none;
+  z-index: 12;
+}
+
+
+.s1_9 {
+  position: absolute;
+  display: none;
+  animation: fadeOut 1s;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+  z-index: 10;
 }
