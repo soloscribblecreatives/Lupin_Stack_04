@@ -23,7 +23,7 @@
   top: 108px;
   width: 492px;
   height: 80px;
-	animation: flipInXFlash 0.5s;
+	animation: noneflipInXFlash 0.5s;
 	animation-delay: 0s;
 	animation-fill-mode: both;
 	z-index: 5;

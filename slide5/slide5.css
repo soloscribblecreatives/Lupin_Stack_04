@@ -23,9 +23,10 @@
   top: 212px;
   width: 298px;
   height: 452px;
-	animation: flash 2s infinite;
+	animation: noneflash 2s infinite;
 	animation-delay: 0s;
 	animation-fill-mode: both;
+	display: none;
 	z-index: 5;
 }
 
@@ -35,7 +36,7 @@
   top: 145px;
   width: 345px;
   height: 68px;
-	animation: flipInXFlash 0.5s;
+	animation: noneflipInXFlash 0.5s;
 	animation-delay: 0s;
 	animation-fill-mode: both;
 	z-index: 5;
@@ -81,7 +82,7 @@
   top: 212px;
   width: 298px;
   height: 452px;
-	animation: flash 2s infinite;
+	animation: noneflash 2s infinite;
 	animation-delay: 0s;
 	animation-fill-mode: both;
 	  display: none;
@@ -94,7 +95,7 @@
   top: 145px;
   width: 345px;
   height: 68px;
-	animation: flipInXFlash 0.5s;
+	animation: noneflipInXFlash 0.5s;
 	animation-delay: 0s;
 	animation-fill-mode: both;
 	  display: none;
@@ -108,7 +109,7 @@
   width: 176px;
   height: 41px;
 	animation: flashLong 3s infinite;
-	animation-delay: 1s;
+	animation-delay: 0s;
 	animation-fill-mode: both;
 	  display: none;
 	z-index: 25;
