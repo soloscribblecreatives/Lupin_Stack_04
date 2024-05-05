@@ -116,6 +116,27 @@
   top: 692px;
   width: 34px;
   height: 62px;
+  transform: rotate3d(0, 0, 1, 0deg);
+  }
+  
+  50% {
+    opacity: 1;
+	transform: rotate3d(0, 0, 1, 0deg);
+  }
+  
+  55% {
+    opacity: 1;
+	transform: rotate3d(0, 0, 1, 25deg);
+  }
+  
+  75% {
+    opacity: 1;
+	transform: rotate3d(0, 0, 1, -35deg);
+  }
+  
+  95% {
+    opacity: 1;
+	transform: rotate3d(0, 0, 1, 25deg);
   }
   
   to {
@@ -124,6 +145,7 @@
   top: 12px;
   width: 34px;
   height: 62px;
+  transform: rotate3d(0, 0, 1, 25deg);
   }
 }
 
@@ -172,15 +194,28 @@
 
 .s8 {
 	position: absolute;
-  left: 335px;
-  top: 241px;
-  width: 134px;
-  height: 85px;
+  left: 341px;
+  top: 32px;
+  width: 128px;
+  height: 86px;
 	animation: fadeInLeft 0.5s;
-	animation-delay: 2s;
+	animation-delay: 3s;
 	animation-fill-mode: both;
 	display: none;
 	z-index: 16;
+}
+
+.s8_1 {
+	position: absolute;
+  left: 342px;
+  top: 32px;
+  width: 79px;
+  height: 72px;
+	animation: flashIt 0.5s infinite;
+	animation-delay: 4s;
+	animation-fill-mode: both;
+	display: none;
+	z-index: 17;
 }
 
 .s9 {
@@ -196,17 +231,43 @@
 	z-index: 16;
 }
 
+.s9_1 {
+	position: absolute;
+  left: 582px;
+  top: 121px;
+  width: 79px;
+  height: 72px;
+	animation: flashIt 0.5s infinite;
+	animation-delay: 4s;
+	animation-fill-mode: both;
+	display: none;
+	z-index: 17;
+}
+
 .s10 {
 	position: absolute;
-  left: 341px;
-  top: 32px;
-  width: 128px;
-  height: 86px;
+  left: 335px;
+  top: 241px;
+  width: 134px;
+  height: 85px;
 	animation: fadeInLeft 0.5s;
-	animation-delay: 3s;
+	animation-delay: 2s;
 	animation-fill-mode: both;
 	display: none;
 	z-index: 16;
+}
+
+.s10_1 {
+	position: absolute;
+  left: 341px;
+  top: 241px;
+  width: 79px;
+  height: 72px;
+	animation: flashIt 0.5s infinite;
+	animation-delay: 4s;
+	animation-fill-mode: both;
+	display: none;
+	z-index: 17;
 }
 
 .s11 {
@@ -560,6 +621,16 @@
 	animation: fadeOut 1s;
 	animation-delay: 0s;
 	animation-fill-mode: both;
+}
+
+@keyframes flashIt {
+  0%, 50%, 100% {
+    opacity: 0;
+  }
+
+  25%, 75% {
+    opacity: 1;
+  }
 }
 
 @keyframes flashLong {
