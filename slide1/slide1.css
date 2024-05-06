@@ -184,7 +184,7 @@
   to {
   opacity: 1;
   left: 1067px;
-  top: 367px;
+  top: 380px;
   width: 62px;
   height: 34px;
   transform: rotate3d(0, 0, 1, 90deg);
@@ -421,10 +421,10 @@
 
 .s18 {
 	position: absolute;
-  left: 547px;
+  left: 548px;
   top: 292px;
-  width: 334px;
-  height: 53px;
+  width: 401px;
+  height: 52px;
 	animation: fadeInRight 0.5s;
 	animation-delay: 2s;
 	animation-fill-mode: both;
@@ -569,7 +569,7 @@
 	position: absolute;
   left: 551px;
   top: 287px;
-  width: 320px;
+  width: 319px;
   height: 53px;
 	animation: fadeInRight 0.5s;
 	animation-delay: 1.5s;
